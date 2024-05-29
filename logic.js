@@ -14,3 +14,4 @@ const cambiarTema = () => {
     document.querySelector("body").getAttribute("data-bs-theme") === "light"?
     temaOscuro() : temaClaro();
 }
+

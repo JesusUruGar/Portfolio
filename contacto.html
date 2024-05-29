@@ -9,10 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="logic.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
     <!-- <link rel="stylesheet" href="bootstrap-breakpoint.css">-->
 </head>
 
-<body class="text-bg-light">
+<body class="text-bg-light" data-bs-theme="light" id="BodyContacto">
     
 <nav class="navbar navbar-expand my-4">
     <div class="container justify-content-center">
@@ -35,7 +36,40 @@
 
 <div class="container">
 
-    
+    <h1 class="text-center m-5 fw-bolder">Contáctame 📫​​</h1>
+
+    <div class="alert alert-info alert-dismissible" role="alert">
+        Recuerda rellenar todos los datos
+        <button class="btn-close" aria-label="close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <form action="">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" id="nombre" class="form-control">
+        <br>
+        <label for="apellidos" class="form-label">Apellidos</label>
+        <input type="text" id="apellidos" class="form-control">
+        <br>
+        
+        <div class="form-check-inline">
+            <input type="radio" class="form-check-input" id="Radio1" name="radio">
+            <label for="Radio1" class="form-check-label">Hombre <i class="bi bi-gender-male"></i></label>
+        </div>
+        <div class="form-check-inline">
+            <input type="radio" class="form-check-input" id="Radio2" name="radio">
+            <label for="Radio2" class="form-check-label">Mujer <i class="bi bi-gender-female"></i></label>
+        </div>
+        <div class="form-check-inline">
+            <input type="radio" class="form-check-input" id="Radio3" name="radio">
+            <label for="Radio3" class="form-check-label">Otro <i class="bi bi-hand-thumbs-down-fill"></i></label>
+        </div>
+        <br><br>
+
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-control">
+        <br>
+
+    </form>
 
 </div>
 
@@ -45,7 +79,7 @@
     <div class="container p-3 d-flex justify-content-between align-items-center">
         <span>© 2024 Jesús Uruñuela</span>
         <div class="d-flex align-items-center">
-            <a href="https://github.com/JesusUruGar" class="bi bi-github link-body-emphasis fs-3 me-2"></a>
+            <a href="https://github.com/JesusUruGar" class="bi bi-github link-body-emphasis fs-3 me-2" target="_blank"></a>
             <button class="btn" onclick="cambiarTema()"><i class="bi bi-moon-fill link-body-emphasis fs-3" id="modo"></i></button>
         </div>
     </div>
